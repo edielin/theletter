@@ -1,0 +1,24 @@
+@font-face{
+	font-family: "小塚明朝 Pro";
+	src:local('小塚明朝 Pro');
+	src:url('KozMinPro-Heavy.otf'),
+		url('KozMinPro-Heavy.svg#KozMinPro-Bold') format('svg');
+}
+.english{
+	font-family: "Times New Roman",arial;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.chinese1{
+	font-family: "小塚明朝 Pro","新細明體";
+	font-weight: 600;
+	font-size: 17px;
+	letter-spacing: 2px;
+}
+.chinese2{
+	font-family: "微軟正黑體";
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 1px;
+}

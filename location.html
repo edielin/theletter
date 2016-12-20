@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+	<title>地　點/ 手　紙 - the letter -</title>
+	<link rel="stylesheet" type="text/css" href="font.css">
+	<link rel="stylesheet" type="text/css" href="location.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/scrollTop.js"></script>
+	<script src="js/showAnimation.js"></script>
+	<!-- 
+	*** 學生作品,無任何商業用途 ***
+	照片來自禮拜文房具
+	http://www.toolstoliveby.com.tw/tw/ 
+	-->
+</head>
+<body>
+<input type="checkbox" id="hamlist">
+<ul class="hamNav mb-show">
+	<li>
+		<a href="paper.html">
+			<p class="chinese1">手紙紙本</p>
+			<p class="english">paper</p>
+		</a>
+	</li>
+	<li>
+		<a href="pen.html">
+			<p class="chinese1">手紙筆具</p>
+			<p class="english">pen / tools</p>
+		</a>
+	</li>
+	<li>
+		<a href="Index.html">
+			<p class="chinese1">手紙首頁</p>
+			<p class="english">home</p>
+		</a>
+	</li>
+	<li>
+		<a href="about.html">
+			<p class="chinese1">關於手紙</p>
+			<p class="english">about</p>
+		</a>
+	</li>
+	<li>
+		<a href="location.html">
+			<p class="chinese1">手紙地點</p>
+			<p class="english">location</p>
+		</a>
+	</li>
+</ul>
+<div class="cartBar">
+	<div class="container960">
+		<div id="navlogo" style="position:absolute; top:0; left:0; right:0; bottom:0; margin: auto;height:27px; text-align: center; display: none">
+			<a href="Index.html">
+				<img src="icon/nav_logo.png" style="width:auto; height:100%">
+			</a>
+		</div>
+		<div class="cart">
+			<label class="hambeger mb-show" for="hamlist"></label>
+
+			<a href="#">
+				<img src="icon/Basket_Empty-32.png">
+			</a>
+			<div class="clearFix"></div>
+		</div>
+	</div>
+</div>
+<!-- ============================== -->
+<div class="navgation1">
+	<div class="container960 mb-hide">
+		<div class="item3">
+		<ul class="list leftlist">
+			<li>
+				<a href="paper.html">
+					<p class="chinese1">紙 本</p>
+					<p class="english">paper</p>
+				</a>
+			</li>
+			<li>
+				<a href="pen.html">
+					<p class="chinese1">筆 具</p>
+					<p class="english">pen / tools</p>
+				</a>
+			</li>
+		</ul>
+		</div>
+		<div class="item3">
+			<div class="logo">
+				<a href="Index.html">
+				<img src="img/letterLogo_b.png">
+				<img src="img/letterLogo_t.png" class="logoRotate">
+				</a>
+			</div>
+		</div>
+		<div class="item3">
+		<ul class="list rightlist">
+			<li>
+				<a href="about.html">
+					<p class="chinese1">關於手紙</p>
+					<p class="english">about</p>
+				</a>
+			</li>
+			<li>
+				<a href="location.html">
+					<p class="chinese1">手紙地點</p>
+					<p class="english">location</p>
+				</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div class="container960 mb-show">
+		<div class="logo">
+			<a href="Index.html">
+				<img src="img/letterLogo_b.png">
+				<img src="img/letterLogo_t.png" class="logoRotate">
+			</a>
+		</div>
+	</div>
+</div>
+<!-- ============================== -->
+<div class="headImg">
+	<div class="container960_np">
+		<img src="img/location960.jpg">
+	</div>
+</div>
+<!-- ============================== -->
+<div class="breadcrumbs">
+	<div class="container960">
+		<div class="bread chinese2">
+			<ul class="where">
+				<li><p>手紙網站</p></li>
+				<li><p>/</p></li>
+				<li><a href="location.html">地　點</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- ============================== -->
+<div class="locBox">
+	<div class="container960">
+		<div class="locTitle">
+			<p class="english">location</p>
+			<p class="chinese1">手紙地點 ”</p>
+		</div>
+		<div class="locInfo">
+			<ul class="locUl chinese2">
+				<li>
+					<p class="addLi">
+						<span>手紙地址：桃園市中壢區中大路300號</span>
+					</p>
+				</li>
+				<li>
+					<p class="timeLi">
+						<span>營業時間：禮拜二至禮拜六 13:00~21:00 / 禮拜日 13:00~19:00</span>
+					</p>
+				</li>
+				<li>
+					<p class="resetLi">
+						<span>固定店休：禮拜一</span>
+					</p>
+				</li>
+				<li>
+					<p class="telLi">
+						<span>店內電話：+886-3-2285-5666</span>
+					</p>
+				</li>
+			</ul>
+			<div class="clearFix"></div>
+		</div>
+
+		<div class="googleMap" id="map"></div>
+
+		<div class="container960_np">
+			<div class="wayInfo box">
+				<div class="wayBox">
+					<div class="wayTitle">
+						<p class="chinese1">到達方式 ”</p>
+					</div>
+					<ul class="way4">
+						<li>
+							<div class="wayBao box">
+								<div class="subWay">
+									<p class="chinese2">捷<br>運</p>
+								</div>
+								<div class="wayWay">
+									<p class="chinese2">
+										自中央站5號出口出來後<br>直走左轉30秒左右即可抵達
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="wayBao box">
+								<div class="subWay">
+									<p class="chinese2">鐵<br>路</p>
+								</div>
+								<div class="wayWay">
+									<p class="chinese2">
+										搭至中壢火車站後<br>轉乘客運紅線56號或藍線87號
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="wayBao box">
+								<div class="subWay">
+									<p class="chinese2">客<br>運</p>
+								</div>
+								<div class="wayWay">
+									<p class="chinese2">
+										可搭乘紅線56號及藍線87號<br>至中央大學站下車
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="wayBao box">
+								<div class="subWay">
+									<p class="chinese2">開<br>車</p>
+								</div>
+								<div class="wayWay">
+									<p class="chinese2">
+										本店位於中央路與中大路交叉口附近<br>建議就近停在五六高中地下停車場
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="myMap box">
+				<img src="img/fakeMap_bn.png">
+			</div>
+			<div class="clearFix"></div>
+		</div>
+	</div>
+</div>
+<script>
+$(function() {
+
+	var animation_elements = $('.box');
+
+    //check to see if any animation containers are currently in view
+	function check_if_in_view() {
+    //get current window information
+    var window_height = $(window).height();
+    var window_top_position = $(window).scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
+    	
+    var element = $(this);
+    // var element_height = $(element).outerHeight();
+    var element_top_position = $(element).offset().top;
+    // var element_bottom_position = (element_top_position + element_height);
+
+      //當視窗出現物件的時候, 給他 class="in-view"
+      // if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+      if (window_bottom_position >= element_top_position){
+        	element.addClass('in-view');
+      // } else {
+      //   element.removeClass('in-view');
+      }
+    });
+  }
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
+
+});
+</script>
+
+
+<div class="container960">
+	<div class="form">
+		<div class="hrLine">
+			<p class="chinese1">留下訊息</p>
+			<p class="english">message</p>
+		</div>
+		<div class="container960">
+			<form action="" method="post" name="message" class="message">
+				<input type="text" name="user" class="user" placeholder="﹡ 姓名 / name" required>
+				<input type="text" name="userPhone" class="userPhone" placeholder=" 電話 / phone number">
+				<input type="email" name="email" class="email" placeholder="﹡ 郵件 / e-mail" required>
+				<input type="text" name="userAdd" class="userAdd" placeholder=" 地址 / address">
+				<textarea name="textarea" class="textarea" required rows="10" placeholder="﹡ 訊息 / message"></textarea>
+				<input type="reset" value="清除重填" class="reset">
+				<input type="submit" value="確認送出" class="submit">
+				<div class="clearFix"></div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- ============================== -->	
+<footer>
+	<div class="container960">
+		<div class="inline-md-3 inline-sm-6 col-xs-6 inline-xss-6">
+			<div class="footerLeft">
+				<p class="chinese2">手紙 -the letter-</p>
+				<p class="chinese2">+886-3-2285-5666</p>
+				<p class="chinese2">桃園市中壢區中大路300號</p>
+			</div>
+		</div>
+		<div class="inlin-mb-hide inline-md-6">
+			<div class="footerCenter">
+				<ul class="footList">
+					<li><a href="paper.html">紙　本</a></li>
+					<li><a href="pen.html">筆　具</a></li>
+					<li><a href="Index.html">手紙首頁</a></li>
+					<li><a href="about.html">關於手紙</a></li>
+					<li><a href="location.html">手紙地點</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="inline-md-3 inline-sm-6 col-xs-6 inline-xss-6">
+			<div class="footerRight">
+				<div class="icon">
+					<a href="https://www.pinterest.com/" target="_blank"><img src="icon/pinterest.png"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.instagram.com/" target="_blank"><img src="icon/instagram.png"></a>
+				</div>
+				<div class="icon">
+					<a href="https://www.facebook.com/" target="_blank"><img src="icon/facebook.png"></a>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</div>
+		<p class="copyright">Copyright &copy; the letter</p>
+	</div>
+</footer>
+<div class="gototop"></div>
+<!-- ============================== -->
+</body>
+</html>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 16,
+
+                    // The latitude and longitude to center the map (always required)
+
+                    center: new google.maps.LatLng(24.968527, 121.196356), 
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#000"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#dddddd"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":0}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#a62b2b"},{"visibility":"on"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(24.968527, 121.196356),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
